@@ -2,7 +2,6 @@
 
 PyTorch implementation of DASVDD.
 
-<center><img src="https://ieeexplore.ieee.org/mediastore/IEEE/content/media/69/10589999/10314785/hojja1-3328882-large.gif" alt="Overview" width="800" align="center"></center>
 
 ## Citation
 
