@@ -9,7 +9,7 @@ DASVDD is an anomaly detection framework that combines deep autoencoders with Su
 - SVDD-inspired loss for anomaly detection
 - Easy to modify and extend for other datasets
 
-## Installation
+## 🔧 Installation
 
 ```
 git clone https://github.com/Armanfard-Lab/DASVDD.git
@@ -29,22 +29,14 @@ Run DASVDD on the MNIST dataset:
 ```
 python3 main.py --dataset NAME_OF_THE_DATASET --targest_class TARGET_CLASS_NO --epochs NUM_EPOCHS
 ```
-Supported datasets:
+Supported datasets: `MNIST`,`FMNIST`,`CIFAR`,`PIMA`,`Speech`.
 
-- MNIST
-- FMNIST
-- CIFAR
-- PIMA
-- Speech
-
-| Argument       | Description                        | Default     |
-| -------------- | ---------------------------------- | ----------- |
-| `--dataset`    | Dataset to use: `PIMA` or `Speech` | *required*  |
-| `--epochs`     | Number of training epochs          | `10`        |
-| `--lr`         | Learning rate                      | `1e-3`      |
-| `--batch_size` | Batch size for training            | `32`        |
-| `--gamma`      | SVDD loss hyperparameter           | auto-tuned  |
-| `--device`     | Device to run on (`cpu` or `cuda`) | auto-detect |
+| Argument        | Description                        | Default     |
+| --------------- | ---------------------------------- | ----------- |
+| `--dataset`     | Dataset to use:                    | *required*  |
+| `--target_class`| Only for MNIST, FMNIST, CIFA       | `0`         |
+| `--epochs`      | Number of training epochs          | `30`        |
+| `--batch_size`  | Batch size for training            | `128`       |
 
 
 ## 📝 Citation

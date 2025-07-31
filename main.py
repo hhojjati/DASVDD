@@ -56,7 +56,7 @@ def main():
     parser.add_argument("--target_class", type=int, default=0,
                         help="Target class for anomaly detection (ignored for Speech and PIMA).")
     parser.add_argument("--epochs", type=int, default=30, help="Number of training epochs.")
-    parser.add_argument("--batch_size", type=int, default=200, help="Training batch size.")
+    parser.add_argument("--batch_size", type=int, default=128, help="Training batch size.")
 
     args = parser.parse_args()
 
